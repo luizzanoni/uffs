@@ -1,4 +1,4 @@
-# UFFS (Universidade Federal da Fronteira Sul)
+# UFFS (Universidade Federal da Fronteira Sul) (rocket)
  
  Repositório utilizado para guardar trabalhos de aula e tudo o que será realizado no curso de CC - UFFS
  Iniciado curso em 2019/2, porém foram dois anos sem aulas, devido a pandemia, start novamente em 2022/1.

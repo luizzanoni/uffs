@@ -4,3 +4,16 @@
  Iniciado curso em 2019/2, porém foram dois anos sem aulas, devido a pandemia, start novamente em 2022/1.
  
  Assim que iniciar as aulas e haver mais trabalhos, serão anexados aqui, pastas com os nomes das matérias.
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,6 @@
 public class Pessoa {
     
-    long idPessoa;
+    int Id;
 
     String RazaoSocial;
 }

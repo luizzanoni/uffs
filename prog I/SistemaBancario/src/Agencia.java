@@ -1,8 +1,8 @@
 public class Agencia {
     
-    int id;
+    private int id;
 
-    String razaoSocialAgencia;
+    public String razaoSocialAgencia;
 
     public int getId() {
         return this.id;

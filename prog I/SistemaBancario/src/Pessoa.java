@@ -1,6 +1,23 @@
 public class Pessoa {
     
-    int Id;
+    int id;
 
-    String RazaoSocial;
+    String razaoSocial;
+
+    public int getId() {
+        return this.id;
+    }
+    
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getRazaoSocial() {
+        return this.razaoSocial;
+    }
+    
+    public void setRazaoSocial(String razaoSocial) {
+        this.razaoSocial = razaoSocial;
+    }
 }
+

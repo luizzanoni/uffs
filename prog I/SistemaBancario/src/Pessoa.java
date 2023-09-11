@@ -1,8 +1,8 @@
 public class Pessoa {
     
-    int id;
+    private int id;
 
-    String razaoSocial;
+    public String razaoSocial;
 
     public int getId() {
         return this.id;

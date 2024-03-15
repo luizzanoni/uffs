@@ -10,7 +10,7 @@ int main() {
     printf("Digite um número: ");
     scanf("%d", &numero);
 
-    for (int i = 1; i <= valor; i++) {
+    for (int i = 1; i <= numero; i++) {
         soma += i;
     }
 

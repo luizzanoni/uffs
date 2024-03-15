@@ -8,4 +8,30 @@
 // Número: 0
 // % entre 10 e 20: 50%
 
+#include <stdio.h>
 
+int main() {
+    int num, count = 0, total = 0;
+
+    printf("Digite uma sequência de números (um número menor ou igual a 0 finaliza a sequência):\n");
+
+    do {
+        scanf("%d", &num);
+        if (num > 0) {
+            total++;
+            if (num >= 10 && num <= 20) {
+                count++;
+            }
+        }
+    } while (num > 0);
+
+    if (total > 0) {
+        printf("%% entre 10 e 20: %.2f%%\n", (float)count / total * 100);
+    } else {
+        printf("Nenhum número foi digitado.\n");
+    }
+
+    return 0;
+}
+
+// TENTEI DE TUDO E NÃO CONSEGUI FAZER FUNCIONAR COM AS SAÍDAS QUE O SENHOR DEU, ELAS FICAM EM 25%

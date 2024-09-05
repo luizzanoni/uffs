@@ -32,3 +32,5 @@ natSub (Suc n) (Suc m) = natSub n m
 natMul :: Nat -> Nat -> Nat
 natMul Zero _ = Zero
 natMul (Suc n) m = natAdd m (natMul n m)
+
+

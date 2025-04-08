@@ -4,15 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo</title>
+    <style>
+        #alterar-cor {
+            padding: 10px;
+        }
+        .fonte-ajustavel {
+            font-size: 16px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("ol").append("<li>Novo item da lista (adicionado com jQuery)</li>");
+
+            $("h4").text("Este é o meu currículo atualizado com jQuery!");
+
+            $("body").append('<button id="aumentar-fonte">Aumentar Fonte</button>');
+            $("body").append('<button id="diminuir-fonte">Diminuir Fonte</button>');
+
+            let fontSize = parseInt($(".fonte-ajustavel").css('font-size'));
+
+            $("#aumentar-fonte").on("click", function() {
+                fontSize += 2;
+                $(".fonte-ajustavel").css('font-size', fontSize + 'px');
+            });
+
+            $("#diminuir-fonte").on("click", function() {
+                fontSize -= 2;
+                $(".fonte-ajustavel").css('font-size', fontSize + 'px');
+            });
+
+            const tabela = document.getElementById('tabela-experiencias');
+            const novaLinha = document.createElement('tr');
+            novaLinha.innerHTML = '<td>Exp 4</td><td>Exp 4</td><td>Exp 4</td><td>Exp 4</td>';
+            tabela.querySelector('tbody').appendChild(novaLinha);
+
+            const elemento = document.getElementById('alterar-cor');
+            elemento.style.backgroundColor = '#ffcccb'; 
+        });
+    </script>
 </head>
 <body>
     <h3>Luiz Gustavo Zanoni</h3>
-    <h4>Apresento a vocês meu currículo para preenchimento da vaga pretendida</h4>
+    <h4 class="fonte-ajustavel">Apresento a vocês meu currículo para preenchimento da vaga pretendida</h4>
 
-    <p>Abaixo encontra minha foto</p>
+    <p class="fonte-ajustavel">Abaixo encontra minha foto</p>
     <img src="firefox.png" alt="minha foto bem bonita">
 
-    <table>
+    <table id="tabela-experiencias">
         <thead>
             <tr>
                 <th>Empresa 1</th>
@@ -34,6 +73,12 @@
                 <td>Exp 2</td>
                 <td>Exp 2</td>
             </tr>
+            <tr>
+                <td>Exp 3</td>
+                <td>Exp 3</td>
+                <td>Exp 3</td>
+                <td>Exp 3</td>
+            </tr>
         </tbody>
     </table>
 
@@ -43,5 +88,9 @@
         <li>list 3</li>
         <li>list 4</li>
     </ol>
+
+    <div id="alterar-cor">
+        <p class="fonte-ajustavel">Este é o parágrafo que terá a cor de fundo alterada.</p>
+    </div>
 </body>
 </html>
